@@ -1,31 +1,14 @@
 # New Boilerplate Repo
 
-##  Running the App with Docker
-
-1. **Build the Docker image**  
-   ```bash
-   docker build -t boilerplate_app .
-   ```
-
-2. **Run the Docker container**  
-   ```bash
-   docker run -p 8000:8000 boilerplate_app
-   ```
+## Running the app
 
 
-## Publishing the Docker Image
+```bash
+ docker-compose build
+```
+```bash
+docker-compose up -d
+```
 
-1. **Log in to Docker Hub**  
-   ```bash
-   docker login
-   ```
 
-2. **Tag the Docker image**  
-   ```bash
-   docker tag boilerplate_app agutierrez4/boilerplate_app:latest
-   ```
-
-3. **Push the Docker image to Docker Hub**  
-   ```bash
-   docker push agutierrez4/boilerplate_app:latest
-   ```
+Once the app is running on port 5000, the data needs to be loaded using the `/add_data` endpoint.
